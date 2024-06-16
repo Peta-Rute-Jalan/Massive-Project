@@ -1,0 +1,833 @@
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* Root Color */
+:root {
+    --primary: #132D46;
+    --Highlight-Effect: #01C38D;
+    --white-text: #F1F1F1;
+    --secondary-background: #646464;
+    --black-text: #000;
+    --bg-CardTransportation: #6884A5;
+    --glassmorp-stroke: rgba(245, 245, 245, 0.30);
+    --glassmorp-fill: linear-gradient(97deg, rgba(237, 237, 237, 0.20) 0%, rgba(212, 212, 212, 0.20) 24.43%, rgba(153, 153, 153, 0.05) 73.29%);
+    --bg-mvp-result: linear-gradient(152deg, #799AB9 0%, #132D46 79.75%);  
+    --PopUp-Daerah: linear-gradient(97deg, rgba(237, 237, 237, 0.20) 0%, rgba(221, 217, 217, 0.20) 99.72%);
+    
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif, italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+nav,
+section,
+article,
+aside,
+footer,
+hgroup {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+html,
+body {
+    background-color: var(--white-text);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Tampilan Awal Homepage*/
+
+section.main-content {
+    background-color: var(--primary);
+    padding: 140px 0px 180px;
+    overflow: hidden;
+}
+
+.main-content .text-content {
+    margin-top: 80px;
+}
+
+.main-content .text-content h1 {
+    color: var(--white-text);
+    font-family: "Plus Jakarta Sans";
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+.main-content .trans-animation {
+    margin-top: 90px;
+}
+
+.main-content .trans-animation .KRL {
+    background: linear-gradient(116deg, #D28151 0%, #AC382C 25.19%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Plus Jakarta Sans";
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.main-content .trans-animation .MRT {
+    background: linear-gradient(117deg, #062371 7.53%, #B11C74 21.68%, #A09EAE 35.82%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Plus Jakarta Sans";
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.main-content .trans-animation .LRT {
+    color: #9D231D;
+    font-family: "Plus Jakarta Sans";
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.main-content .trans-animation .BUS {
+    background: linear-gradient(116deg, #EB1C1E 0%, #FDC04C 25.19%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Plus Jakarta Sans";
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.main-content .trans-animation .Mikrotrans {
+    color: #3A88DE;
+font-family: "Plus Jakarta Sans";
+font-size: 46px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+text-transform: uppercase;
+}
+
+
+.main-content .text-content h3 {
+    color: var(--white-text);
+    font-family: "Plus Jakarta Sans";
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.main-content .text-content span {
+    color: var(--white-text);
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    opacity: 45%;
+}
+
+
+.main-content .btn-dest {
+    margin-top: 20px;
+}
+
+.main-content .btn-dest .btn-primary {
+    color: var(--white-text);
+    background-color:#B8B8B8;
+    border-color: #B8B8B8;
+}
+
+.main-content .btn-dest .btn {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    padding: .775rem .975rem;
+    text-align: left;
+    border-radius: 20px;
+    width: 550px;
+}
+
+.main-content .background-anim .slide-pict{
+    position: absolute; 
+    top: -10%;
+    right: -10%; 
+    width: 50%; 
+    height: 85%; 
+}
+
+
+/* Mengapa memakai kami?*/
+
+section.why-us {
+    background-color: var(--white-text);
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.why-us .anim-why {
+    background-color: var(--primary);
+    border-radius: 360px;
+    border: 40px solid var(--white-text);
+    height: 680px;
+    width: 680px;
+    position: absolute;
+    margin-left: 50px;
+    display: flex;
+    align-self: last baseline;
+}
+
+.why-us .anim-why img {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.why-us .backdrop {
+    background-color: var(--primary);
+    padding-top: 130px;
+    border-radius: 15px;
+    padding-bottom: 280px;
+}
+
+.why-us .content-why h1 {
+    color: var(--white-text);
+    font-family: "Plus Jakarta Sans";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.why-us .content-why span {
+    color: var(--white-text);
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.why-us .tile-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+.why-us .input-container {
+    position: relative;
+    height: 7rem;
+    width: 7rem;
+    margin: 0.5rem;
+    margin-right: 50px;
+    margin-left: 35px;
+    transition: all 300ms ease;
+  }
+  
+  
+.why-us .input-container .icon-why {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: var(--white-text);
+    border-radius: 20px;
+    transition: all 300ms ease;
+  }
+
+  
+.why-us .input-container:hover {
+    height: 8rem;
+    width: 8rem;
+}
+
+.why-us .text-why-loc h2{
+    color: var(--white-text);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+
+}
+
+.why-us .text-why-trans h2{
+    color: var(--white-text);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+
+}
+
+.why-us .text-why-rute h2{
+    color: var(--white-text);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+
+}
+
+.why-us .text-why-loc {
+    display:flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    align-self: center;
+}
+
+.why-us .text-why-trans {
+    display:flex;
+    justify-content: center;
+    margin-left: 25px;
+    margin-top: 25px;
+    text-align: center;
+    align-self: center;
+}
+
+.why-us .text-why-rute {
+    display:flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-left: 25px;
+    text-align: center;
+    align-self: center;
+}
+
+.why-us .body-why-loc span{
+    display: flex;
+    color: var(--white-text);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+
+    padding-bottom: 30px;
+}
+
+.why-us .body-why-trans span{
+    display: flex;
+    color: var(--white-text);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.why-us .body-why-rute span{
+    display: flex;
+    color: var(--white-text);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+/* Transportasi Publik*/
+
+section.trans-pub {
+    padding-top: 50px;
+    background-color: var(--white-text);
+    padding-bottom: 30px;
+}
+
+.trans-pub .title {
+    margin-bottom: 50px;
+}
+
+.trans-pub .title h1 {
+    color: var(--primary);
+    text-align: center;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 800;
+
+}
+
+.trans-pub .title h2{
+    color: var(--primary);
+    text-align: center;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.trans-pub .kereta {
+    border-radius: 0px 50px 50px 0px;
+    border: 1px solid var(--Glassmorp-Stroke, rgba(19, 45, 70, 1));
+    background: var(--Glassmorp-Fill, linear-gradient(97deg, rgba(34, 64, 93, 0.9) 0%, rgba(20, 53, 83, 0.9) 24.43%, rgba(19, 45, 70, 1) 73.29%));
+    backdrop-filter: blur(30px);
+    padding-top: 80px;
+    border-radius: 15px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+
+.trans-pub .kereta .gambar {
+    margin-left: 50px;
+}
+
+.trans-pub .kereta .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.trans-pub .kereta .text h1 {
+    color: var(--white-text);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+}
+
+.trans-pub .kereta .text span{
+    color: var(--white-text);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.trans-pub .kereta .text .btn{
+    margin-top: 20px;
+    border-radius: 25px;
+    background: var(--white-text);
+    border-color: none;
+    color: var(--primary);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    width: 300px;
+}
+
+.trans-pub .kereta .text .btn-primary{
+    border-color: transparent;
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    box-shadow: none;
+    border-color: none;
+}
+
+.trans-pub .kereta .text .btn:hover {
+    margin-top: 20px;
+    border-radius: 25px;
+    background: var(--primary);
+    border-color: none;
+    color: var(--Highlight-Effect);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    width: 300px;
+}
+
+/* Transportasi Punlik */
+
+/* Footer */
+
+section.footer {
+    background-color: var(--primary);
+    padding-top: 50px;
+    padding-bottom:30px;
+}
+
+.footer .title h1 {
+    color: var(--Highlight-Effect);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footer .title h2 {
+    color: var(--Highlight-Effect);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer .btn-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .btn-footer .btn {
+    margin: 30px;
+    width: 150px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    color: var(--Highlight-Effect);
+    font-style: normal;
+    font-weight: 700;
+    background: var(--Glassmorp-Fill, linear-gradient(97deg, rgba(80, 97, 114, 0.9) 0%, rgba(20, 53, 83, 0.9) 24.43%, rgba(19, 45, 70, 1) 73.29%));
+    border-color: rgba(213, 210, 210, 0.185);
+}
+
+.footer .btn-footer .btn:hover {
+    margin: 30px;
+    width: 150px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    color: var(--white-text);
+    font-style: normal;
+    font-weight: 700;
+    background: var(--Highlight-Effect);
+    border-color: rgba(213, 210, 210, 0.185);
+}
+
+
+.copyright{
+    background-color: var(--white-text);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.copyright span{
+    color: var(--Highlight-Effect);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Footer */
+
+/* Daerah jakarta */
+
+.daerah {
+    background: var(--bg-mvp-result);
+}
+
+.daerah .btn_daerah li {
+    display: inline-block;
+}
+
+.daerah .btn_daerah ul li a {
+    display: block;
+    padding: 10px 10px;
+    color: var(--white-text);
+    border-radius: 10px;
+    border: 1px solid var(--White-Text, #F1F1F1);
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+}
+
+.daerah .content_daerah {
+    margin-top: 5%;
+    min-height: 700px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: radial-gradient(90.78% 123.38% at 6.01% 8.93%, rgba(149, 149, 149, 0.7) 0%, rgba(92, 92, 92, 0.35) 0.01%, rgba(223, 223, 223, 0.28) 100%);
+    backdrop-filter: blur(150px);
+    
+}
+
+.daerah .content_daerah .monas {
+    margin-top: -8%;
+    overflow: visible;
+
+}
+
+.daerah .content_daerah .title-jakarta {
+    color: var(--white-text);
+    text-align: justify;
+    font-family:'Plus Jakarta Sans', sans-serif, italic;
+}
+
+.daerah .content_daerah .title-jakarta h1 {
+    color: var(--White-Text, #F1F1F1);
+    font-family: "Plus Jakarta Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 750;
+    line-height: normal;
+    
+}
+
+.daerah .pilihan {
+    background-color: inherit;
+}
+
+.daerah .pilihan .title h1{
+    color: var(--white-text);
+    font-family: "Plus Jakarta Sans";
+    font-size: 40px;
+    font-weight: 700px;
+    line-height: normal;
+}
+
+.pilihan .card-transportasi {
+    position: relative;
+}
+
+.pilihan .card-transportasi img {
+    max-height: 450px;
+    width: 90%;
+    border-radius: 5px;
+    filter: brightness(50%);
+}
+
+.pilihan .card-transportasi span {
+    color: var(--white-text);
+    font-family: "Plus Jakarta Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    position: absolute;
+    left: 10%;
+    top: 90%;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+#sidebar {
+    width: 400px;
+    background-color: #132D46;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.image-container {
+    position: relative;
+    width: 10px;
+    height: 100px;
+    overflow: hidden;
+    transform: skewX(-20deg);
+    margin: 0 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: skewX(20deg);
+}
+
+#map {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.result-frame {
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: #2F6FAC;
+    color: #FFFFFF;
+    width: 100%; /* initially set to 100%, will adjust dynamically */
+}
+.route-path {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    flex-direction: column; 
+    text-align: center;
+}
+.left div {
+    margin: 5px 0;
+}
+.right {
+    text-align: center;
+    font-size: 14px;
+    line-height: 0.5;
+}
+.route-path .left {
+    margin-right: 10px; 
+}
+.right .train-info {
+    font-weight: bold;
+}
+.route-path img {
+    margin-bottom: 5px; 
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.btn-sm {
+    display: block; 
+    width: auto; 
+    margin-top: 5px;
+}
+
+.images {
+    margin-top: 10px; 
+}
+
+/* About us */
+
+section.about_us {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about_us .logo {
+    position: fixed;
+    top: 12%;
+}
+
+.about_us .bg-logo {
+    position: absolute;
+    width: 530px;
+    height: 530px;
+    z-index: 1;
+    flex-shrink: 0;
+    border-radius: 300px;
+    background: linear-gradient(180deg, rgba(1, 195, 141, 0.10) 0%, rgba(1, 195, 141, 0.45) 20%, rgba(1, 195, 141, 0.80) 80%), #01C38D;
+    filter: blur(100px);
+}
+
+.about_us .logo-img {
+    position: absolute;
+    z-index: 2;
+}
+
+@media (max-width: 960px) {
+    .about_us .logo-img {
+        height: 300px;
+    }
+    .about_us .bg-logo {
+        max-width: 310px;
+        max-height: 310px;
+    }
+    .about_us .logo {
+        top: 30%;
+    }
+}
+
+@media (max-width: 576px) {
+    .about_us .bg-logo {
+        max-width: 145px;
+        max-height: 145px;
+    }
+    .about_us .logo {
+        top: 41%;
+    }
+}
+
+@media (max-width: 430px) {
+    .about_us .logo {
+        top: 44%;
+    }
+}
+
+.about_us .title-about {
+    margin-top: 28px;
+    height: 300px;
+    background-color: var(--primary);
+}
+
+.about_us .text1 h2 {
+    color: #FFF;
+    text-align: center; 
+    font-family: "Plus Jakarta Sans";
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 650;
+    line-height: normal;
+}
