@@ -1,7 +1,9 @@
+// src/pages/Search.js
+
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
+import '../vendor/bootstrap/css/bootstrap.min.css';
 import '../assets/css/style.css';
-// import './assets/css/custom.css';
 
 const Search = () => {
   const [halte, setHalte] = useState('');
@@ -10,32 +12,39 @@ const Search = () => {
 
   const searchRoute = () => {
     if (halte && tujuan) {
-      const busImage = document.getElementById('busImage');
-
-      const resultFrame = (
-        <div className="result-frame" style={{ width: `${busImage.clientWidth}px` }}>
-          <div className="route-path">
-            <div className="left">
-              <img src="assets/images/logo/walk.png" alt="Walk" style={{ height: '30px' }} />
-              <span>M2</span>
+      axios.get('http://localhost:3001/api/search', {
+        params: {
+          halte,
+          tujuan
+        }
+      })
+      .then(response => {
+        if (response.data.length > 0) {
+          const route = response.data[0];
+          const resultFrame = (
+            <div className="result-frame">
+              <div className="route-path">
+                <div className="left">
+                  <img src="assets/images/logo/walk.png" alt="Walk" style={{ height: '30px' }} />
+                  <span>{route.rute}</span>
+                </div>
+                <div className="right">
+                  <p className="train-info">Kereta: <strong>{route.tujuan}</strong></p>
+                  <p><span>{halte} - {tujuan}</span></p>
+                  <p><span>IDR: ???</span></p>
+                </div>
+              </div>
             </div>
-            <div className="left">
-              <span>-</span>
-            </div>
-            <div className="left">
-              <img src="assets/images/logo/train.jpg" alt="Train" style={{ height: '30px' }} />
-              <span>M1/1</span>
-            </div>
-            <div className="right">
-              <p className="train-info">Kereta: <strong>Depok/Bogor</strong></p>
-              <p><span>Juanda - Bundaran HI</span></p>
-              <p><span>IDR: ???</span></p>
-            </div>
-          </div>
-        </div>
-      );
-
-      setSearchResults(resultFrame);
+          );
+          setSearchResults(resultFrame);
+        } else {
+          setSearchResults(<p>Rute tidak ditemukan</p>);
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching route:', error);
+        setSearchResults(<p>Error fetching route</p>);
+      });
     }
   };
 

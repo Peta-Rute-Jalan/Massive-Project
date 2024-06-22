@@ -1,5 +1,5 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../vendor/bootstrap/css/bootstrap.min.css';
 import '../assets/css/style.css';
 
 const Index = () => {
@@ -29,7 +29,7 @@ const Index = () => {
                   Sistem informasi transportasi di daerah JaBoDeTaBek yang relevan, membantu mengarahkan masyarakat yang bingung saat menggunakan transportasi publik di daerah JaBoDeTaBek.
                 </span>
                 <div className="btn-dest">
-                  <a href="">
+                  <a href="/Tujuan">
                     <button type="button" className="btn btn-primary">Klik untuk mencari destinasi</button>
                   </a>
                 </div>
@@ -134,9 +134,11 @@ const Index = () => {
                 </div>
                 <div className="text col-5 align-items-center">
                   <h1>Kereta Api</h1>
-                  <span>Lorem ipsum dolor</span>
+                  <span>Informasi Lainnya</span>
                   <div className="flex-container">
+                  <a href="/keretaapi">
                     <button type="button" className="btn btn-primary">Lihat</button>
+                  </a>
                   </div>
                 </div>
               </div>
@@ -152,7 +154,7 @@ const Index = () => {
                 </div>
                 <div className="text col-5 align-items-center">
                   <h1>Bus</h1>
-                  <span>Lorem ipsum dolor</span>
+                  <span>Informasi Lainnya</span>
                   <div className="flex-container">
                     <button type="button" className="btn btn-primary">Lihat</button>
                   </div>
@@ -168,7 +170,7 @@ const Index = () => {
                 </div>
                 <div className="text col-5 align-items-center">
                   <h1>Mikrotrans</h1>
-                  <span>Lorem ipsum dolor</span>
+                  <span>Informasi Lainnya</span>
                   <div className="flex-container">
                     <button type="button" className="btn btn-primary">Lihat</button>
                   </div>
@@ -183,17 +185,25 @@ const Index = () => {
             <div className="row">
               <div className="title justify-content-center">
                 <h1>Peta Rute Jalan</h1>
-                <h2>Lorem Ipsum</h2>
+                <h2>Mudah dan cepat memilih rute yang ingin anda ketahui</h2>
               </div>
             </div>
           </div>
           <div className="container">
             <div className="row align-items-center justify-content-center">
               <div className="btn-footer col-8 justify-content-center">
-                <button type="button" className="btn btn-primary">Search Bar</button>
+              <a href="/Tujuan">
+                  <button type="button" className="btn btn-primary">Search Bar</button>
+                </a>
+                <a href="/">
                 <button type="button" className="btn btn-primary">Transportasi</button>
+                </a>
+                <a href="/Chat">
                 <button type="button" className="btn btn-primary">Live Chat</button>
-                <button type="button" className="btn btn-primary3">About Us</button>
+                </a>
+                <a href="/AboutUs">
+                  <button type="button" className="btn btn-primary3">About Us</button>
+                </a>
               </div>
             </div>
           </div>
@@ -203,7 +213,7 @@ const Index = () => {
             <span>Copyright © 2024 All Right Reserved</span>
           </div>
         </div>
-
+zz
         <script src="assets/js/script.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
       </body>
