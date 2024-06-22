@@ -156,7 +156,9 @@ const Index = () => {
                   <h1>Bus</h1>
                   <span>Informasi Lainnya</span>
                   <div className="flex-container">
-                    <button type="button" className="btn btn-primary">Lihat</button>
+                  <a href="/bus">
+                  <button type="button" className="btn btn-primary">Lihat</button>
+                  </a>
                   </div>
                 </div>
               </div>

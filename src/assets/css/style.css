@@ -963,8 +963,11 @@ section.about_us {
   }
   
   .whoosh-image {
-    margin-right: 20px;
+    width: 376px;
+    height: 339px;
+    margin-right: 20px; /* jika Anda ingin menyertakan margin kanan */
   }
+  
   
   .whoosh-text {
     flex: 1;

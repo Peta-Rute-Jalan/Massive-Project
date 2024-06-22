@@ -11,6 +11,13 @@ import Whoosh from './pages/KA/whoosh';
 import Keretabandara from './pages/KA/keretabandara';
 import LRT from './pages/KA/LRT';
 import KRL from './pages/KA/KRL';
+import Bus from './pages/Bus';
+import Tangerang from './pages/BUS/Tangerang';
+import Bekasi from './pages/BUS/Bekasi';
+import Jakarta from './pages/BUS/Jakarta';
+import Bogor from './pages/BUS/Bogor';
+import Depok from './pages/BUS/Depok';
+import Damri from './pages/BUS/Damri';
 
 const App = () => {
   return (
@@ -27,6 +34,17 @@ const App = () => {
         <Route path="/keretabandara" element={<Keretabandara />} />
         <Route path="/lrt" element={<LRT />} />
         <Route path="/krl" element={<KRL />} />
+        <Route path="/bus" element={<Bus />} />
+        <Route path="/tangerang" element={<Tangerang />} />
+        <Route path="/bekasi" element={<Bekasi />} />
+        <Route path="/jakarta" element={<Jakarta />} />
+        <Route path="/bogor" element={<Bogor />} />
+        <Route path="/depok" element={<Depok />} />
+        <Route path="/damri" element={<Damri />} />
+
+
+
+
 
 
 
